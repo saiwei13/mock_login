@@ -1,6 +1,6 @@
 import re
 import requests
-from mock_login.base_client import BaseClient
+from base_client import BaseClient
 
 __author__ = 'chenwei'
 

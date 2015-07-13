@@ -2,7 +2,7 @@ import configparser
 from datetime import datetime,date
 import random
 import requests
-from mock_login.base_client import BaseClient
+from base_client import BaseClient
 
 __author__ = 'chenwei'
 
@@ -44,7 +44,7 @@ class Renren(BaseClient):
         # print("跳转url=",rsp.url)
 
         # return
-        from mock_login import rsa
+        import rsa
 
         key = self.getEncryptKey()
         print(key)
@@ -111,8 +111,7 @@ class Renren(BaseClient):
 
 if __name__ == '__main__':
 
-
-    from mock_login.utils import config_file
+    from utils import config_file
 
     cf = configparser.ConfigParser()
     cf.read(config_file)
@@ -122,4 +121,3 @@ if __name__ == '__main__':
         password=cf.get('renren','password')
     )
     renren.sign_in();
-

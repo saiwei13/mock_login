@@ -8,8 +8,8 @@ from datetime import datetime,date
 
 import random
 import requests
-from mock_login.base_client import BaseClient
-from mock_login import utils
+from base_client import BaseClient
+import utils
 
 
 

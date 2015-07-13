@@ -87,6 +87,12 @@ class V2EX(BaseClient):
         if '每日登录奖励已领取' in rsp.text:
             print('奖励领取成功')
 
+    def notify_unread(self):
+        '''
+        未读提醒
+        :return:
+        '''
+        pass
 
 if __name__ == '__main__':
 
